@@ -1,21 +1,21 @@
 
 let output = document.getElementById("output-screen");
 
-function display(num){
+function display(num) {
     output.value += num;
 }
-function calculate(){
-    try{
+function calculate() {
+    try {
         output.value = eval(output.value);
     }
-    catch(err){
+    catch (err) {
         alert("invalid")
     }
-    
+
 }
-function Clear(){
+function Clear() {
     output.value = " ";
 }
-function Del(){
-    output.value = output.value.slice(0,-1);
+function Del() {
+    output.value = output.value.slice(0, -1);
 }
